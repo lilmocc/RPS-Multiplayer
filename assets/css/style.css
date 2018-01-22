@@ -1,0 +1,34 @@
+.center-text {
+  text-align: center;
+  margin: auto;
+}
+
+.form-group {
+  text-align: center;
+  margin: auto;
+}
+
+.player1-box, .player2-box {
+    background-color: orange;
+    border: solid black 1px;
+      margin: auto;
+
+}
+
+.player1-selection, .player2-selection {
+  font-size: 2rem;
+  color: white;
+  margin: auto;
+
+}
+
+.result {
+  text-align: center;
+  font-size: 1.5rem;
+  color: red;
+  font-weight: bold;
+}
+
+.align-center {
+  text-align: center;
+}

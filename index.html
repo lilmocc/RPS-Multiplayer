@@ -3,23 +3,109 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>TEMPLATE</title>
+  <title>Rock, Paper, Scissors</title>
   <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
 
 </head>
 
 <body>
   <header>
-
-    <h1 id="title-text">TEMPLATE</h1>
-
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="center-text">Rock, Paper, Scissors</h1>
+        </div>
+    </div>
+  </div>
   </header>
+
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+      <form class="form-inline">
+          <div class="form-group">
+
+            <label for="player-name">Name:</label>
+            <input type="text" class="form-control" id="player-name" placeholder="Type your name here">
+            <input type="submit" class="submit-name" value="SUBMIT">
+
+          </div>
+
+      </form>
+      </div>
+    </div>
+
+        <div class="row">
+          <div class="col-12 align-center">
+                <button type="button" class="start-game" id="start-game-button">start game</button>
+                <button type="button" class="join-game" id="join-game-button">join game</button>
+          </div>
+        </div>
+
+
+    <br>
+
+    <div class="row">
+      <!-- Player 1 -->
+      <div class="col-4 player1-box">
+        <div class="row">
+          <div class="col-12 player1-choice">
+            <span class="player1-text">Player 1: </span><span class="player1-selectiontext">waiting for selection..</span>
+          </div>
+        </div>
+          <div class="row player1-selection">
+            <div class="col-12">
+            test
+          </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              Wins: <span id="player1-wins">0</span><br>
+              Losses: <span id="player1-losses">0</span>
+            </div>
+          </div>
+
+      </div>
+
+      <!-- Result -->
+      <div class="col-4">
+        <div class="status-message">result pending</div>
+      </div>
+
+      <!-- Player 2 -->
+      <div class="col-4 player2-box">
+        <div class="row">
+          <div class="col-12 player2-choice">
+            <span class="player2-text">Player 2: </span><span class="player2-selectiontext">waiting for selection..</span>
+          </div>
+        </div>
+          <div class="row player2-selection">
+            <div class="col-12">
+            test
+          </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              Wins: <span id="player2-wins">0</span><br>
+              Losses: <span id="player2-losses">0</span>
+            </div>
+          </div>
+
+      </div>
+
+
+    </div>
+  </div>
 
 
 
   <script src="assets/javascript/jquery-3.2.1.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
   <script src="assets/javascript/app.js"></script>
 </body>
 
